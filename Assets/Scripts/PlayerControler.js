@@ -4,8 +4,8 @@ private var rb:Rigidbody2D;
 private var animController:Animator; //animatino controller to get the jump
 private var sprite:SpriteRenderer;
 private var alreadyJumped:boolean = false;
-private var leftLimiter:gameObject;
-private var rightLimiter:gameObject;
+private var leftLimiter:GameObject;
+private var rightLimiter:GameObject;
 
 public var jumpHeight:int = 10;
 public var acceleration:float = 0.1;
@@ -18,7 +18,6 @@ function Start () {
 	rb = gameObject.GetComponent(Rigidbody2D);
 	//Debug.Log("Hate this headache");
 	//rb.velocity.x = startSpeed;
-	leftLimiter = this.GetComponent(gameObject);
 	animController = this.GetComponent(Animator);
 	//when he's grounded tell the animation controller 
 	animController.SetBool("grounded", true);
