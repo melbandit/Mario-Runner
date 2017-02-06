@@ -1,8 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerControler.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PickUpView.js">
     <Files>
-      <File FileName="Assets/Scripts/PlayerControler.js" Line="20" Column="31" />
+      <File FileName="Assets/Scripts/BaddieBehavior.js" Line="23" Column="22" />
+      <File FileName="Assets/Scripts/LevelController.js" Line="5" Column="15" />
+      <File FileName="Assets/Scripts/PickUpView.js" Line="27" Column="2" />
+      <File FileName="Assets/Scripts/PlayerBehavior.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

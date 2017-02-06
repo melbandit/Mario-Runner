@@ -4,8 +4,8 @@ private var rb:Rigidbody2D;
 private var animController:Animator; //animatino controller to get the jump
 private var sprite:SpriteRenderer;
 private var alreadyJumped:boolean = false;
-private var leftLimiter:GameObject;
-private var rightLimiter:GameObject;
+//private var leftLimiter:GameObject;
+//private var rightLimiter:GameObject;
 
 public var jumpHeight:int = 10;
 public var acceleration:float = 0.1;
@@ -16,6 +16,7 @@ public var maxSpeed:float = 5;
 function Start () {
 //change the players position
 	rb = gameObject.GetComponent(Rigidbody2D);
+	//leftLimiter = gameObject.GetComponent(Rigidbody2D);
 	//Debug.Log("Hate this headache");
 	//rb.velocity.x = startSpeed;
 	animController = this.GetComponent(Animator);
@@ -47,12 +48,8 @@ function FixedUpdate () {
 	var frontFootHit:RaycastHit2D = Physics2D.Raycast( frontFootRay, Vector2.down, 0.01);
 	var backFootHit:RaycastHit2D = Physics2D.Raycast( backFootRay, Vector2.down, 0.01);
 
-	if(transform.position.x < leftLimiter.transform.position.x){
-		rb.velocity.x = rb.velocity.x - acceleration;
-	} else if(transform.position.x > rightLimiter.transform.position.x){ 
-		rb.velocity.x = rb.velocity.x + acceleration;
-	}
 
+//
 
 	//Debug.Log( hit.collider);
 	//JUMP
